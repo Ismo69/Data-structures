@@ -1,21 +1,32 @@
-
-n=10
-
-def DotProduct(ListA, ListB): 
+import random
+import numpy  
   
-    product = 0
-  
-    # Loop for calculate dot product 
-    for i in range(0, n): 
-        product = product + ListA[i] * ListB[i] 
-  
-    return product
 
-    print("Dot product:", end =" ") 
-    print(dotProduct(ListA, ListB))
+A = [] 
+B = [] 
 
 
-    if __name__=='__main__': 
-    ListA = [1, 2, 9] 
-    ListB = [3, 8, 4] 
+def DotProduct(N, ListA, ListB): 
   
+    
+  
+    # Loop for calculating dot product 
+    for i in range(N):  
+        first = random.randint(1, 1000)  
+        ListA.append(first)  
+    for j in range(N):  
+        second = random.randint(1, 1000)  
+        ListB.append(second)  
+
+
+    value = numpy.dot(ListA, ListB)  
+
+    
+    print("List A:", ListA)
+    print("List B:", ListB)
+    print("The size of the array is:", N)
+    print("Dot Product:", result)  
+
+
+DotProduct(, A, B)  
+DotProduct(, A, B)

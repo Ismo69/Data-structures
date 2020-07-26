@@ -39,10 +39,15 @@ class Rectangle:
     def rec_area(self):
         self.area = self.height * self.width
         return self.area
+    
+    def intersect(RecA, RecB, Rec1, Rec2): 
 
-rec = Rectangle(Point(0,0),Point(1,1))
-print(rec.height)
-print(rec.width)
-print(rec.perimeter())
-print(rec.area())
+rec = Rectangle(Point(0,0),Point(12,12))
+print(rec.area)  
+print(rec.perimeter) 
 
+recA = rectangle(Point(2, 4), Point(8, 8))
+recB = rectangle(Point(4, 8), Point(10, 10))
+
+
+rec.intersect(recA.bottomLeftCorner, recA.topRightCorner, recB.bottomLeftCorner, recB.topRightCorner)
